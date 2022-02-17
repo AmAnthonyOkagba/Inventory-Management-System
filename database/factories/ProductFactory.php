@@ -22,11 +22,11 @@ class ProductFactory extends Factory
      */
     public function definition()
     {
-        $product_name = $this->faker->unique()->words($nb=4,$asText=true);
+        // $product_name = $this->faker->unique()->words($nb=4,$asText=true);
         return [
-            'name' => $product_name,
-            'regular_price' => $this->faker->numberBetween(500,5000),
-            'quanity' => $this->faker->numberBetween(100,200),
+            // 'name' => $product_name,
+            // 'regular_price' => $this->faker->numberBetween(500,5000),
+            // 'quanity' => $this->faker->numberBetween(100,200),
         ];
     }
 }

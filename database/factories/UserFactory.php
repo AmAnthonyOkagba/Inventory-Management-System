@@ -25,9 +25,9 @@ class UserFactory extends Factory
         return [
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
-            'email_verified_at' => now(),
+            // 'email_verified_at' => now(),
             'password' => '$2y$10$cwxqAEon/acLmlpa9LP5n.X/Jkl8UMDt8co3tBljB9.ZCu/NDRs3C', // password
-            'remember_token' => Str::random(10),
+            // 'remember_token' => Str::random(10),
             'utype' => 'ADM',
         ];
     }
