@@ -47,14 +47,14 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
 Route::middleware(['auth:sanctum', 'verified','authadmin'])->group(function(){
     Route::get('/admin/dashboard', 'Admin\AdminDashboardController@index')->name('admin.dashboard');
 
-    Route::get('/admin/products',[App\Http\Controllers\admin\AdminProductController::class, 'index'])->name('admin.products');
+    Route::get('/admin/products',[App\Http\Controllers\Admin\AdminProductController::class, 'index'])->name('admin.products');
     Route::get('/admin/product/add', [App\Http\Controllers\Admin\AdminProductController::class, 'create'])->name('admin.addproduct');
     Route::post('admin/store-product/',[App\Http\Controllers\Admin\AdminProductController::class, 'store']);
     Route::get('/admin/product/edit/{id}', [App\Http\Controllers\Admin\AdminProductController::class, 'edit'])->name('admin.editproduct');
     Route::put('admin/update-product/{id}',[App\Http\Controllers\Admin\AdminProductController::class, 'update']);
     Route::get('admin/deleteProduct/{id}',[App\Http\Controllers\Admin\AdminProductController::class, 'delete']);
 
-    Route::get('/admin/orders',[App\Http\Controllers\admin\AdminOrderController::class, 'index'])->name('admin.orders');
-    Route::get('/admin/update-order/',[App\Http\Controllers\admin\AdminOrderController::class, 'updateOrderStatus'])->name('admin.update-order');
-    Route::get('/admin/order/{order_id}',[App\Http\Controllers\admin\AdminOrderDetailsController::class, 'index'])->name('admin.orderdetails');
+    Route::get('/admin/orders',[App\Http\Controllers\Admin\AdminOrderController::class, 'index'])->name('admin.orders');
+    Route::get('/admin/update-order/',[App\Http\Controllers\Admin\AdminOrderController::class, 'updateOrderStatus'])->name('admin.update-order');
+    Route::get('/admin/order/{order_id}',[App\Http\Controllers\Admin\AdminOrderDetailsController::class, 'index'])->name('admin.orderdetails');
 });
