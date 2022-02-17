@@ -59,7 +59,6 @@ class AdminProductController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'regular_price' => 'required|numeric',
-            'sale_price' => 'numeric',
             'quantity' => 'required|numeric',
         ]);
 

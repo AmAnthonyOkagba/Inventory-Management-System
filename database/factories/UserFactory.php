@@ -23,12 +23,12 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'name' => 'Admin',
-            'email' => 'admin@gmail.com',
-            // 'email_verified_at' => now(),
-            'password' => '$2y$10$cwxqAEon/acLmlpa9LP5n.X/Jkl8UMDt8co3tBljB9.ZCu/NDRs3C', // password
-            // 'remember_token' => Str::random(10),
-            'utype' => 'ADM',
+            // 'name' => 'Admin',
+            // 'email' => 'admin@gmail.com',
+            // // 'email_verified_at' => now(),
+            // 'password' => '$2y$10$cwxqAEon/acLmlpa9LP5n.X/Jkl8UMDt8co3tBljB9.ZCu/NDRs3C', // password
+            // // 'remember_token' => Str::random(10),
+            // 'utype' => 'ADM',
         ];
     }
 
