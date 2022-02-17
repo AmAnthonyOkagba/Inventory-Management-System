@@ -51,3 +51,17 @@ php artisan serve
 
 
 Visit localhost:8000 in your browser
+
+<br>
+
+# Login Details
+
+Admin Login
+
+```bash
+email: admin@gmail.com
+```
+
+```bash
+password: 12345678
+```
