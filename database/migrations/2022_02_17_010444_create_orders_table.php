@@ -25,7 +25,7 @@ class CreateOrdersTable extends Migration
             $table->string('phone');
             $table->string('email');
             $table->string('address');
-            $table->string('state');
+            $table->string('state')->nullable();
             $table->enum('status',['ordered','delivered','canceled'])->default('ordered');
             $table->date('delivered_date')->nullable();
             $table->date('canceled_date')->nullable();
